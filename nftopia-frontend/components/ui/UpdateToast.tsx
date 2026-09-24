@@ -60,6 +60,7 @@ export default function UpdateToast() {
     const registration = registrationRef.current;
     if (registration?.waiting) {
       // Skip the waiting service worker to activate it
+      // @ts-ignore: skipWaiting exists on ServiceWorkerRegistration but may not be in the type definition
       registration.skipWaiting();
     }
     // Reload the page to get the new version
