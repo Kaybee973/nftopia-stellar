@@ -4,7 +4,7 @@ import ApolloWrapper from "@/lib/graphql/apollo-wrapper";
 import { AuthProvider } from "@/lib/context/AuthContext";
 import dynamic from "next/dynamic";
 import ExperimentProviderWrapper from '@/lib/experiments/ExperimentProvider';
-import Toast from '@/components/ui/toast';
+import { Toast } from '@/components/ui/toast';
 import UpdateToast from '@/components/ui/UpdateToast';
 
 // ─── SAFE COMPILER SEPARATION ──────────────────────────────────────────

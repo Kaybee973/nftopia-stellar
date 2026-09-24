@@ -60,7 +60,7 @@ export default function UpdateToast() {
     const registration = registrationRef.current;
     if (registration?.waiting) {
       // Skip the waiting service worker to activate it
-      registration.waiting.skipWaiting();
+      registration.skipWaiting();
     }
     // Reload the page to get the new version
     window.location.reload();
